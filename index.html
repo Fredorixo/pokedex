@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Round" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/8495db6216.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <!-- The Sidebar of the Single Page Application -->
+
+    <section class="sidebar">
+        <h2>Pokedex.io</h2>
+        <div class="select_menu">
+            <button class="filters">
+                <span class="material-icons-round">filter_list</span>
+                Filters
+            </button>
+            <button class="types">Type</button>
+            <button class="habitat">Habitat</button>
+            <button class="color">Color</button>
+            <button class="shape">Shape</button>
+            <button class="gender">Gender</button>
+            <button class="name">Name</button>
+            <button class="ability">Ability</button>
+            <button class="egg-group">Egg Group</button>
+            <button class="growth-rate">Growth Rate</button>
+            <button class="suggestions">
+                <span class="material-icons-round">assistant</span>
+                Suggestions
+            </button>
+            <button class="random">
+                <span class="material-icons-round">shuffle</span>
+                Random
+            </button>
+            <button class="recent">
+                <span class="material-icons-round">visibility</span>
+                Recent
+            </button>
+        </div>
+    </section>
+
+    <!-- The Main Section for the SPA -->
+
+    <section class="main">
+        <i class="fas fa-bars"></i>
+        <div class="header">
+            <h1>Welcome to Pokedex!</h1>
+            <h3>Find your favourite Pokemon here</h3>
+            <div class="search_bar">
+                <input type="text" placeholder="Search by Name">
+                <button class="pokeball">
+                    <div class="pokeball__button"></div>
+                </button>
+            </div>
+        </div>
+        <section class="cards"></section>
+        <p class="error" hidden>
+            No results found for given query.
+            <br>Please try out one of the given suggestions.
+        </p>
+    </section>
+
+    <script src="backend.js"></script>
+    <script src="pokemon.js"></script>
+    <script src="suggestions.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
