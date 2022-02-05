@@ -398,6 +398,16 @@ button > span {
     margin-left: 4.2em;
 }
 
+    /* Copyright Section */
+
+.sidebar > footer {
+    font-size: var(--fs-h3);
+    font-family: var(--ff-secondary);
+    color: white;
+
+    margin-bottom: 2em;
+}
+
 /* Styling the Search Bar */
 
 .search_bar {

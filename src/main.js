@@ -10,6 +10,9 @@ const recentButton = buttons[12];
 const pokeball = document.querySelector(".pokeball");
 const pokeballButton = document.querySelector(".pokeball__button");
 
+let date = new Date();
+const copyrightStatement = document.querySelector(".sidebar footer");
+
 
 input.addEventListener("keypress",keys => {
     errorMessage.setAttribute("hidden","");
@@ -256,3 +259,7 @@ burgerIcon.addEventListener("click",() => {
         burgerIcon.style.color = "white";
     }
 });
+
+// CopyRight Segment
+
+copyrightStatement.textContent += date.getFullYear();
