@@ -186,7 +186,6 @@ body {
     overflow: auto;
     text-align: center;
     background-color: var(--clr-sidebar);
-    border-bottom-right-radius: 0.8em;
     border-top-right-radius: 0.8em;
 
     transition: transform 250ms ease-in;
@@ -401,7 +400,7 @@ button > span {
     /* Copyright Section */
 
 .sidebar > footer {
-    font-size: var(--fs-h3);
+    font-size: calc(var(--fs-h3) / 1.2);
     font-family: var(--ff-secondary);
     color: white;
 
@@ -436,7 +435,7 @@ input:focus {
         0 0 0 5px black;
 }
 
-@media (max-width: 520.9px) {
+@media (max-width: 600.9px) {
     .search_bar {
         margin-right: auto;
     }
@@ -627,44 +626,9 @@ input:focus {
 
 @media (max-width: 600.9px) {
     .cards > div {
-        min-width: 15em;
-
-        column-gap: 0.5em;
-        grid-template-areas: 
-            ".      img"
-            "name   img"
-            "type   img"
-            "h        h"
-            "w        w"
-            "st      st"
-            "a        a"
-            "hp      hp"
-            "atk    atk"
-            "def    def"
-            "exp    exp";
-    }
-
-    .Height,
-    .Weight,
-    .Stat,
-    .Ability,
-    .HP,
-    .DEF,
-    .ATK,
-    .EXP {
-        margin-right: 9em;
-        margin-left: 4em;
-    }
-
-    img {
-        margin-right: 1em;
-    }
-}
-
-@media (max-width: 520.9px) {
-    .cards > div {
         padding-right: 1.3em;
-
+        min-width: 15em;
+        column-gap: 0.5em;
         grid-template-columns: 1fr;
         grid-template-areas: 
             "img"
@@ -744,7 +708,7 @@ img      { grid-area: img; }
 }
 
 
-@media (min-width: 520.9px) {
+@media (min-width: 600.9px) {
     .Name {
         margin: -9.5em auto 0 auto;
         max-width: 11.5em;

@@ -10,7 +10,7 @@ const recentButton = buttons[12];
 const pokeball = document.querySelector(".pokeball");
 const pokeballButton = document.querySelector(".pokeball__button");
 
-let date = new Date();
+const date = new Date();
 const copyrightStatement = document.querySelector(".sidebar footer");
 
 
@@ -262,4 +262,4 @@ burgerIcon.addEventListener("click",() => {
 
 // CopyRight Segment
 
-copyrightStatement.textContent += date.getFullYear();
+copyrightStatement.textContent = `©2021-${date.getFullYear()} Manas Kaushik`;
