@@ -370,7 +370,7 @@ function createPokemonCard(pokemon) {
     setStatsBar("HP",pokemon.stats[0].base_stat);
     setStatsBar("ATK",pokemon.stats[1].base_stat);
     setStatsBar("DEF",pokemon.stats[2].base_stat);
-    setStatsBar("EXP",pokemon.base_experience);
+    setStatsBar("EXP",pokemon.base_experience ? pokemon.base_experience : 100);
 }
 
 // Showing a default pokemon as Pikachu
